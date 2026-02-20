@@ -50,7 +50,7 @@ ax_right.set_ylim(ax.get_ylim())
 
 
 ax.set_title('House of Lords Membership numbers', x=0.03, loc='left',fontsize=24)
-ax.xaxis.set_major_locator(mdates.YearLocator(base=5))
+#ax.xaxis.set_major_locator(mdates.YearLocator(base=5))
 
 
 ax.tick_params(axis='x', labelsize=24)
