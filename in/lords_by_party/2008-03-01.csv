@@ -1,0 +1,12 @@
+Id,Name,MaleCount,FemaleCount,NonBinaryCount,TotalCount
+15,Labour,163,55,0,218
+4,Conservative,167,35,0,202
+6,Crossbench,165,32,0,197
+17,Liberal Democrat,57,21,0,78
+3,Bishops,26,0,0,26
+49,Non-affiliated,5,3,0,8
+35,UK Independence Party,2,0,0,2
+5,Conservative Independent,1,0,0,1
+44,Green Party,1,0,0,1
+10,Independent Labour,1,0,0,1
+21,Other,1,0,0,1

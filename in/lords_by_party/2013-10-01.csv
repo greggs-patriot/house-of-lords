@@ -1,0 +1,16 @@
+Id,Name,MaleCount,FemaleCount,NonBinaryCount,TotalCount
+4,Conservative,179,41,0,220
+15,Labour,155,65,0,220
+6,Crossbench,146,38,0,184
+17,Liberal Democrat,67,31,0,98
+3,Bishops,22,0,0,22
+49,Non-affiliated,17,4,0,21
+35,UK Independence Party,3,0,0,3
+7,Democratic Unionist Party,2,0,0,2
+22,Plaid Cymru,2,0,0,2
+38,Ulster Unionist Party,2,0,0,2
+44,Green Party,0,1,0,1
+10,Independent Labour,1,0,0,1
+50,Independent Liberal Democrat,0,1,0,1
+52,Independent Ulster Unionist,1,0,0,1
+51,Liberal Democrat Independent,1,0,0,1
