@@ -4,15 +4,14 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import plot_params as ppar
 
-IN_PATH = os.path.join('interim','lords_count.csv')
+IN_PATH = os.path.join('interim_2','membership_2000_2025.csv')
 OUT_PATH = os.path.join('out','lords_membership.png')
 
 df = pd.read_csv(IN_PATH)
 
 
 df['date'] = pd.to_datetime(df['date'])
-df = df.sort_values('date')
-df = df[(df['date'] >= '2000-01-01') & (df['date'] <= '2025-12-31')]
+#df = df[(df['date'] >= '2000-01-01') & (df['date'] <= '2025-12-31')]
 
 
 fig, ax, ax_right = ppar.default_settings()
