@@ -6,7 +6,7 @@ OUT_PATH = os.path.join('interim','lords_count.csv')
 
 
 
-dates = pd.date_range("1958-01-01", "2026-02-01", freq="MS")
+dates = pd.date_range("1958-08-01", "2026-02-01", freq="MS")
 
 
 summary = []
