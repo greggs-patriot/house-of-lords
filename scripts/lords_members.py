@@ -1,18 +1,19 @@
 import os
 import pandas as pd
 
+IN_PATH = os.path.join('in','lords_by_party','{}.csv')
 OUT_PATH = os.path.join('interim','lords_count.csv')
 
-URL = 'https://data.parliament.uk/membersdataplatform/services/mnis/HouseOverview/Lords/{}/'
 
-dates = pd.date_range("1999-01-01", "2026-02-01", freq="MS")
+
+dates = pd.date_range("1958-01-01", "2026-02-01", freq="MS")
 
 
 summary = []
 
 for d in dates:
     print(d.strftime("%Y-%m-%d"))
-    df = pd.read_xml(URL.format(d.strftime("%Y-%m-%d")))
+    df = pd.read_csv(IN_PATH.format(d.strftime("%Y-%m-%d")))
 
     summary.append({
         'date': d.strftime("%Y-%m-%d"),
