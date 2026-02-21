@@ -4,8 +4,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import plot_params as ppar
 
-IN_PATH = os.path.join('interim_2','membership_2000_2025.csv')
-OUT_PATH = os.path.join('out','lords_membership.png')
+#import lobals
+
+IN_PATH = os.path.join('lords_by_party','5','membership_1999_2025.csv')
+OUT_PATH = os.path.join('lords_by_party','7','membership_1999_2025.png')
 
 df = pd.read_csv(IN_PATH)
 
@@ -46,5 +48,5 @@ fig.text(
 )
 
 plt.tight_layout(rect=[0, 0.025, 1, 1])
-plt.savefig(OUT_PATH, dpi=300, facecolor=fig.get_facecolor())
 plt.show()
+plt.savefig(OUT_PATH, dpi=300, facecolor=fig.get_facecolor())
