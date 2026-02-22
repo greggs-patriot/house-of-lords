@@ -1,8 +1,8 @@
 import os
 import pandas as pd
 
-IN_PATH = os.path.join('interim','lords_count.csv')
-OUT_PATH = os.path.join('interim_2','{}.csv')
+IN_PATH = os.path.join('lords_by_party','3','lords_count.csv')
+OUT_PATH = os.path.join('lords_by_party','5','{}.csv')
 
 def filter(df,**kw):
     name,start,end,columns = kw['name'],kw['start'],kw['end'],kw['columns']
@@ -25,6 +25,11 @@ plots = [
             'columns' : ['total']
         },
         {   'name' : 'membership_1960_2025',
+            'start' : '1960-01-01',
+            'end' : '2025-12-31',
+            'columns' : ['total']
+        },
+        {   'name' : 'mf_membership_1960_2025',
             'start' : '1960-01-01',
             'end' : '2025-12-31',
             'columns' : ['total_male','total_female']
